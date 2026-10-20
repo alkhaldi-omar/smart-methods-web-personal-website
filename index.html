@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Omar Al-Khaldi - Personal Website | الموقع الشخصي لعمر الخالدي">
+  <title>عمر الخالدي | Omar Al-Khaldi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">O<span>.</span>K</a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+          <li><a href="#about" data-i18n="nav_about">نبذة عني</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">المهارات</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">المشاريع</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">تواصل</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="langToggle" title="Language">EN</button>
+        <button class="icon-btn" id="themeToggle" title="Theme">🌙</button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hello" data-i18n="hero_hello">مرحباً، أنا</p>
+        <h1 data-i18n="hero_name">عمر الخالدي</h1>
+        <h2><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="hero-desc" data-i18n="hero_desc">
+          طالب في برنامج Smart Methods، أحب بناء الأشياء التي تجمع بين البرمجة والإلكترونيات والويب.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">شاهد مشاريعي</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">تواصل معي</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="avatar">
+          <span>OK</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about_title">نبذة عني</h2>
+      <div class="about-grid">
+        <p class="about-text" data-i18n="about_text">
+          أنا عمر، مهتم بالروبوتات وأنظمة التحكم وتطوير الويب. في برنامج Smart Methods تعلمت التحكم بمحركات السيرفو باستخدام Arduino،
+          وتصميم خوارزمية مشي للروبوت الشبيه بالإنسان، والآن أتعلم بناء واجهات الويب باستخدام HTML و CSS و JavaScript
+          لربط الروبوتات بالتطبيقات عبر USB و Bluetooth و Wi-Fi.
+        </p>
+        <div class="about-cards">
+          <div class="info-card">
+            <span class="info-icon">🎓</span>
+            <h3 data-i18n="about_card1_title">التعليم</h3>
+            <p data-i18n="about_card1_text">برنامج Smart Methods</p>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">🤖</span>
+            <h3 data-i18n="about_card2_title">الاهتمامات</h3>
+            <p data-i18n="about_card2_text">الروبوتات وإنترنت الأشياء</p>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">💻</span>
+            <h3 data-i18n="about_card3_title">أتعلم الآن</h3>
+            <p data-i18n="about_card3_text">تطوير الويب و Flutter</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-i18n="skills_title">المهارات</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-head"><span>HTML</span><span>85%</span></div>
+          <div class="bar"><div class="fill" data-width="85"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>CSS</span><span>75%</span></div>
+          <div class="bar"><div class="fill" data-width="75"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>JavaScript</span><span>65%</span></div>
+          <div class="bar"><div class="fill" data-width="65"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Arduino / C++</span><span>80%</span></div>
+          <div class="bar"><div class="fill" data-width="80"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Git &amp; GitHub</span><span>70%</span></div>
+          <div class="bar"><div class="fill" data-width="70"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span data-i18n="skill_sim">المحاكاة (Tinkercad / Wokwi)</span><span>75%</span></div>
+          <div class="bar"><div class="fill" data-width="75"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-i18n="projects_title">المشاريع</h2>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">الكل</button>
+        <button class="filter-btn" data-filter="robotics" data-i18n="filter_robotics">روبوتات</button>      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="robotics">
+          <div class="project-icon">⚙️</div>
+          <h3 data-i18n="p1_title">التحكم بأربعة محركات سيرفو</h3>
+          <p data-i18n="p1_desc">برنامج Arduino يحرك 4 محركات سيرفو بنمط Sweep لمدة ثانيتين ثم يثبتها على زاوية 90°.</p>
+          <div class="tags"><span>Arduino</span><span>C++</span><span>Servo</span></div>
+          <a href="https://github.com/alkhaldi-omar/smart-methods-week2-servo-task" target="_blank" rel="noopener" class="project-link" data-i18n="view_code">عرض الكود ←</a>
+        </article>
+
+        <article class="project-card" data-category="robotics">
+          <div class="project-icon">🚶</div>
+          <h3 data-i18n="p2_title">خوارزمية مشي الروبوت</h3>
+          <p data-i18n="p2_desc">توثيق خوارزمية مشي لروبوت شبيه بالإنسان مع مخططات الحالات والتوصيل.</p>
+          <div class="tags"><span>Algorithm</span><span>Mermaid</span></div>
+          <a href="https://github.com/alkhaldi-omar/smart-methods-week2-servo-task/blob/main/WALKING_ALGORITHM.md" target="_blank" rel="noopener" class="project-link" data-i18n="view_code">عرض الكود ←</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact_title">تواصل معي</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p data-i18n="contact_text">لديك سؤال أو فكرة مشروع؟ راسلني وسأرد عليك بأقرب وقت.</p>
+          <a class="contact-item" href="mailto:alkhaldi.omar@icloud.com">✉️ alkhaldi.omar@icloud.com</a>
+          <a class="contact-item" href="https://github.com/alkhaldi-omar" target="_blank" rel="noopener">🐙 github.com/alkhaldi-omar</a>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <input type="text" id="name" data-i18n-placeholder="form_name" placeholder="الاسم" required>
+          <input type="email" id="email" data-i18n-placeholder="form_email" placeholder="البريد الإلكتروني" required>
+          <textarea id="message" rows="5" data-i18n-placeholder="form_message" placeholder="رسالتك" required></textarea>
+          <button type="submit" class="btn btn-primary" data-i18n="form_send">إرسال</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Omar Al-Khaldi — <span data-i18n="footer">صُنع بـ ❤️ في Smart Methods</span></p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
